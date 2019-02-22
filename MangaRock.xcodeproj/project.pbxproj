@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2C054D701B4799170B36445 /* Pods_MangaRock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */; };
+		F971180A221F02D7003F57B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97117FF221F02D7003F57B5 /* Assets.xcassets */; };
+		F9711810221F0355003F57B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9711812221F0355003F57B5 /* LaunchScreen.storyboard */; };
+		F9711826221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971181A221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift */; };
+		F9711827221F03F1003F57B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F971181B221F03F1003F57B5 /* Main.storyboard */; };
+		F9711828221F03F1003F57B5 /* MRAllMangaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971181E221F03F1003F57B5 /* MRAllMangaTableViewController.swift */; };
+		F9711829221F03F1003F57B5 /* MRMangaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971181F221F03F1003F57B5 /* MRMangaTableViewCell.swift */; };
+		F971182A221F03F1003F57B5 /* MangaRock.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = F9711821221F03F1003F57B5 /* MangaRock.sqlite-wal */; };
+		F971182B221F03F1003F57B5 /* MangaRock.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F9711822221F03F1003F57B5 /* MangaRock.sqlite */; };
+		F971182C221F03F1003F57B5 /* MangaRock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9711823221F03F1003F57B5 /* MangaRock.xcdatamodeld */; };
+		F971182D221F03F1003F57B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9711825221F03F1003F57B5 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock.release.xcconfig"; sourceTree = "<group>"; };
+		5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaRock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock.debug.xcconfig"; sourceTree = "<group>"; };
+		F90A1B322217DF2600EFF735 /* MangaRock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaRock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9260D54221F047F00A07BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F97117FF221F02D7003F57B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9711811221F0355003F57B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F971181A221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRMangaInfoCollectionViewController.swift; sourceTree = "<group>"; };
+		F971181C221F03F1003F57B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F971181E221F03F1003F57B5 /* MRAllMangaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRAllMangaTableViewController.swift; sourceTree = "<group>"; };
+		F971181F221F03F1003F57B5 /* MRMangaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRMangaTableViewCell.swift; sourceTree = "<group>"; };
+		F9711821221F03F1003F57B5 /* MangaRock.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MangaRock.sqlite-wal"; sourceTree = "<group>"; };
+		F9711822221F03F1003F57B5 /* MangaRock.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MangaRock.sqlite; sourceTree = "<group>"; };
+		F9711824221F03F1003F57B5 /* MangaRock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangaRock.xcdatamodel; sourceTree = "<group>"; };
+		F9711825221F03F1003F57B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F90A1B2F2217DF2600EFF735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C054D701B4799170B36445 /* Pods_MangaRock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5801BCA6448A9AFEB7BC00AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */,
+				39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67241653D13676E94572263F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F90A1B292217DF2600EFF735 = {
+			isa = PBXGroup;
+			children = (
+				F90A1B342217DF2600EFF735 /* MangaRock */,
+				F90A1B332217DF2600EFF735 /* Products */,
+				5801BCA6448A9AFEB7BC00AF /* Pods */,
+				67241653D13676E94572263F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F90A1B332217DF2600EFF735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F90A1B322217DF2600EFF735 /* MangaRock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F90A1B342217DF2600EFF735 /* MangaRock */ = {
+			isa = PBXGroup;
+			children = (
+				F9711817221F03F1003F57B5 /* Classes */,
+				F9711814221F0381003F57B5 /* Resources */,
+				F9711813221F036A003F57B5 /* Supporting Files */,
+			);
+			path = MangaRock;
+			sourceTree = "<group>";
+		};
+		F9711813221F036A003F57B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9260D54221F047F00A07BC2 /* Info.plist */,
+				F9711812221F0355003F57B5 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9711814221F0381003F57B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F97117FF221F02D7003F57B5 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9711817221F03F1003F57B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F9711825221F03F1003F57B5 /* AppDelegate.swift */,
+				F9711818221F03F1003F57B5 /* UI */,
+				F9711820221F03F1003F57B5 /* Backend */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F9711818221F03F1003F57B5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F971181B221F03F1003F57B5 /* Main.storyboard */,
+				F971181D221F03F1003F57B5 /* AllManga */,
+				F9711819221F03F1003F57B5 /* MangaInfo */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F9711819221F03F1003F57B5 /* MangaInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F971181A221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift */,
+			);
+			path = MangaInfo;
+			sourceTree = "<group>";
+		};
+		F971181D221F03F1003F57B5 /* AllManga */ = {
+			isa = PBXGroup;
+			children = (
+				F971181E221F03F1003F57B5 /* MRAllMangaTableViewController.swift */,
+				F971181F221F03F1003F57B5 /* MRMangaTableViewCell.swift */,
+			);
+			path = AllManga;
+			sourceTree = "<group>";
+		};
+		F9711820221F03F1003F57B5 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				F9711823221F03F1003F57B5 /* MangaRock.xcdatamodeld */,
+				F9711821221F03F1003F57B5 /* MangaRock.sqlite-wal */,
+				F9711822221F03F1003F57B5 /* MangaRock.sqlite */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F90A1B312217DF2600EFF735 /* MangaRock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90A1B492217DF2600EFF735 /* Build configuration list for PBXNativeTarget "MangaRock" */;
+			buildPhases = (
+				9DA9C9AD0F2E0823CFBB3652 /* [CP] Check Pods Manifest.lock */,
+				F90A1B2E2217DF2600EFF735 /* Sources */,
+				F90A1B2F2217DF2600EFF735 /* Frameworks */,
+				F90A1B302217DF2600EFF735 /* Resources */,
+				BC191EE4FF1763EBE206917C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangaRock;
+			productName = MangaRock;
+			productReference = F90A1B322217DF2600EFF735 /* MangaRock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F90A1B2A2217DF2600EFF735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MR;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vien Tran";
+				TargetAttributes = {
+					F90A1B312217DF2600EFF735 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F90A1B2D2217DF2600EFF735 /* Build configuration list for PBXProject "MangaRock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F90A1B292217DF2600EFF735;
+			productRefGroup = F90A1B332217DF2600EFF735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F90A1B312217DF2600EFF735 /* MangaRock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F90A1B302217DF2600EFF735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9711810221F0355003F57B5 /* LaunchScreen.storyboard in Resources */,
+				F971182B221F03F1003F57B5 /* MangaRock.sqlite in Resources */,
+				F971182A221F03F1003F57B5 /* MangaRock.sqlite-wal in Resources */,
+				F971180A221F02D7003F57B5 /* Assets.xcassets in Resources */,
+				F9711827221F03F1003F57B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DA9C9AD0F2E0823CFBB3652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangaRock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC191EE4FF1763EBE206917C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F90A1B2E2217DF2600EFF735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9711826221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift in Sources */,
+				F971182C221F03F1003F57B5 /* MangaRock.xcdatamodeld in Sources */,
+				F9711828221F03F1003F57B5 /* MRAllMangaTableViewController.swift in Sources */,
+				F971182D221F03F1003F57B5 /* AppDelegate.swift in Sources */,
+				F9711829221F03F1003F57B5 /* MRMangaTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9711812221F0355003F57B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9711811221F0355003F57B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F971181B221F03F1003F57B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F971181C221F03F1003F57B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F90A1B472217DF2600EFF735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F90A1B482217DF2600EFF735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F90A1B4A2217DF2600EFF735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MangaRock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notabasement.MangaRock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F90A1B4B2217DF2600EFF735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MangaRock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notabasement.MangaRock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F90A1B2D2217DF2600EFF735 /* Build configuration list for PBXProject "MangaRock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90A1B472217DF2600EFF735 /* Debug */,
+				F90A1B482217DF2600EFF735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90A1B492217DF2600EFF735 /* Build configuration list for PBXNativeTarget "MangaRock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90A1B4A2217DF2600EFF735 /* Debug */,
+				F90A1B4B2217DF2600EFF735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9711823221F03F1003F57B5 /* MangaRock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9711824221F03F1003F57B5 /* MangaRock.xcdatamodel */,
+			);
+			currentVersion = F9711824221F03F1003F57B5 /* MangaRock.xcdatamodel */;
+			path = MangaRock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F90A1B2A2217DF2600EFF735 /* Project object */;
+}
