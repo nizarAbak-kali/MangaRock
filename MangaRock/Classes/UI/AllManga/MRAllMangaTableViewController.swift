@@ -52,6 +52,15 @@ class MRAllMangaTableViewController: UITableViewController, NSFetchedResultsCont
         cell.thumbnailImageView.sd_setImage(with: URL(string: manga.thumbnailImage), completed: nil)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let cell = sender else { fatalError() }
+        if let indexPath = tableView.indexPath(for: cell as! UITableViewCell) {
+            let destination = segue.destination as! MRMangaInfoViewController
+            destination.manga = mangaList[indexPath.row]
+        }
+        
+    }
     // MARK: - Fetched results controller
 }
 
