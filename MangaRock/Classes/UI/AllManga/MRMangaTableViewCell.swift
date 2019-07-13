@@ -16,6 +16,7 @@ class MRMangaTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        thumbnailImageView.sd_cancelImageLoadOperation(withKey: nil)
         thumbnailImageView.image = nil
         nameLabel.text = nil
         authorLabel.text = nil

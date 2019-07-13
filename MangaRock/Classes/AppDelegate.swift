@@ -17,30 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Prepare sample data
-        if let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).last {
-            let sqlDBPath = applicationSupportPath.appending("/MangaRock.sqlite")
-            if !FileManager.default.fileExists(atPath: sqlDBPath) {
-
-                if let sampleDBPath = Bundle.main.path(forResource: "MangaRock", ofType: "sqlite"), let sampleWalDBPath = Bundle.main.path(forResource: "MangaRock", ofType: "sqlite-wal") {
-
-                    do {
-                        try FileManager.default.createDirectory(atPath: applicationSupportPath, withIntermediateDirectories: true, attributes: nil)
-                        try FileManager.default.copyItem(atPath: sampleDBPath, toPath: sqlDBPath)
-                        try FileManager.default.copyItem(atPath: sampleWalDBPath, toPath: applicationSupportPath.appending("/MangaRock.sqlite-wal"))
-                    } catch {
-                        let nserror = error as NSError
-                        fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-                    }
-                }
-            }
-        }
-        
-        // Set managed object context to all manga view controller
-        let navigationController = self.window!.rootViewController as! UINavigationController
-        let allMangaTableViewController = navigationController.topViewController as! MRAllMangaTableViewController
-        allMangaTableViewController.managedObjectContext = self.persistentContainer.viewContext
-        
         return true
     }
     
@@ -65,40 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
     }
-    
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "MangaRock")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-    
-    // MARK: - Core Data Saving support
-
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
-
 }
 

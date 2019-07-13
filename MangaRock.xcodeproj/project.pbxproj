@@ -3,11 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2C054D701B4799170B36445 /* Pods_MangaRock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */; };
+		479B467AB70D79E6DC10DDDC /* Pods_MangaRock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBCBACB37AF4CD41EDE8A46 /* Pods_MangaRock.framework */; };
+		8B0FAC3D22D9DD73003F9EBE /* MangaRequestAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC3C22D9DD73003F9EBE /* MangaRequestAPIProtocol.swift */; };
+		8B0FAC3F22D9DDAA003F9EBE /* MangaCoredataRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC3E22D9DDAA003F9EBE /* MangaCoredataRequestAPI.swift */; };
+		8B0FAC4122D9DDC9003F9EBE /* MangaHTTPRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC4022D9DDC9003F9EBE /* MangaHTTPRequestAPI.swift */; };
+		8B0FAC4422D9DE05003F9EBE /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC4322D9DE05003F9EBE /* HTTPService.swift */; };
+		8B0FAC4622D9DE12003F9EBE /* CoredataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC4522D9DE12003F9EBE /* CoredataService.swift */; };
+		8B0FAC4822D9DE31003F9EBE /* MangaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC4722D9DE31003F9EBE /* MangaManager.swift */; };
+		8B0FAC4D22D9E0C3003F9EBE /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC4C22D9E0C3003F9EBE /* CharacterViewModel.swift */; };
+		8B0FAC5222D9E68B003F9EBE /* SVManaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5122D9E68B003F9EBE /* SVManaga.swift */; };
+		8B0FAC5422D9E6EC003F9EBE /* SVCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5322D9E6EC003F9EBE /* SVCharacter.swift */; };
+		8B0FAC5722D9E782003F9EBE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5622D9E782003F9EBE /* Result.swift */; };
+		8B0FAC5922D9E7F1003F9EBE /* CommonBlockTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5822D9E7F1003F9EBE /* CommonBlockTypes.swift */; };
+		8B0FAC5B22D9E9C1003F9EBE /* DefinedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5A22D9E9C1003F9EBE /* DefinedTypes.swift */; };
+		8B0FAC5D22D9EAB1003F9EBE /* MangaCoredataRequestAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5C22D9EAB1003F9EBE /* MangaCoredataRequestAPIProtocol.swift */; };
+		8B0FAC5F22D9F6A7003F9EBE /* ServerUpdatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5E22D9F6A7003F9EBE /* ServerUpdatableProtocol.swift */; };
+		8B0FAC6122D9F711003F9EBE /* ServerModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC6022D9F711003F9EBE /* ServerModelProtocol.swift */; };
+		8B0FAC6522D9F7E3003F9EBE /* MangaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC6422D9F7E3003F9EBE /* MangaViewModel.swift */; };
+		8B31169022D9F9D300CC9ADB /* CDManga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31168F22D9F9D300CC9ADB /* CDManga.swift */; };
+		8B31169222D9F9F900CC9ADB /* CDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169122D9F9F900CC9ADB /* CDCharacter.swift */; };
+		8B31169522D9FBD600CC9ADB /* ModelUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169422D9FBD600CC9ADB /* ModelUpdater.swift */; };
+		8B31169822DA081500CC9ADB /* BaseCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169722DA081500CC9ADB /* BaseCoreDataStack.swift */; };
+		8B31169A22DA08DB00CC9ADB /* ParallelCoredataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169922DA08DB00CC9ADB /* ParallelCoredataContext.swift */; };
+		8B31169C22DA090E00CC9ADB /* MultiContextStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169B22DA090E00CC9ADB /* MultiContextStack.swift */; };
+		8B31169E22DA096400CC9ADB /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31169D22DA096400CC9ADB /* ManagedObject.swift */; };
+		8B3116A222DA119600CC9ADB /* ErrorFormatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3116A122DA119600CC9ADB /* ErrorFormatable.swift */; };
+		8B3116A422DA11FC00CC9ADB /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3116A322DA11FC00CC9ADB /* CoreDataError.swift */; };
+		8B3116A622DA33AE00CC9ADB /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3116A522DA33AE00CC9ADB /* CommonError.swift */; };
+		8B3116A922DA495F00CC9ADB /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3116A822DA495F00CC9ADB /* Bootstrap.swift */; };
+		8B3116B222DA5D3B00CC9ADB /* MangaManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3116B122DA5D3B00CC9ADB /* MangaManagerTests.swift */; };
+		8BB6A21922DA01BC008AF0EF /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6A21822DA01BC008AF0EF /* ViewModelProtocol.swift */; };
+		8BB6A21B22DA01DF008AF0EF /* CoreData+ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6A21A22DA01DF008AF0EF /* CoreData+ObjectID.swift */; };
 		F971180A221F02D7003F57B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97117FF221F02D7003F57B5 /* Assets.xcassets */; };
 		F9711810221F0355003F57B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9711812221F0355003F57B5 /* LaunchScreen.storyboard */; };
 		F9711826221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971181A221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift */; };
@@ -20,10 +50,53 @@
 		F971182D221F03F1003F57B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9711825221F03F1003F57B5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B3116B422DA5D3B00CC9ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90A1B2A2217DF2600EFF735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F90A1B312217DF2600EFF735;
+			remoteInfo = MangaRock;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock.release.xcconfig"; sourceTree = "<group>"; };
-		5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaRock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock.debug.xcconfig"; sourceTree = "<group>"; };
+		4BBCBACB37AF4CD41EDE8A46 /* Pods_MangaRock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaRock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FA0DAD25BAC2975BC16D52 /* Pods-MangaRock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.debug.xcconfig"; path = "Target Support Files/Pods-MangaRock/Pods-MangaRock.debug.xcconfig"; sourceTree = "<group>"; };
+		642BEC294D938B95B914BDB1 /* Pods-MangaRock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaRock.release.xcconfig"; path = "Target Support Files/Pods-MangaRock/Pods-MangaRock.release.xcconfig"; sourceTree = "<group>"; };
+		8B0FAC3C22D9DD73003F9EBE /* MangaRequestAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaRequestAPIProtocol.swift; sourceTree = "<group>"; };
+		8B0FAC3E22D9DDAA003F9EBE /* MangaCoredataRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaCoredataRequestAPI.swift; sourceTree = "<group>"; };
+		8B0FAC4022D9DDC9003F9EBE /* MangaHTTPRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaHTTPRequestAPI.swift; sourceTree = "<group>"; };
+		8B0FAC4322D9DE05003F9EBE /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		8B0FAC4522D9DE12003F9EBE /* CoredataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataService.swift; sourceTree = "<group>"; };
+		8B0FAC4722D9DE31003F9EBE /* MangaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaManager.swift; sourceTree = "<group>"; };
+		8B0FAC4C22D9E0C3003F9EBE /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		8B0FAC5122D9E68B003F9EBE /* SVManaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVManaga.swift; sourceTree = "<group>"; };
+		8B0FAC5322D9E6EC003F9EBE /* SVCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCharacter.swift; sourceTree = "<group>"; };
+		8B0FAC5622D9E782003F9EBE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8B0FAC5822D9E7F1003F9EBE /* CommonBlockTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBlockTypes.swift; sourceTree = "<group>"; };
+		8B0FAC5A22D9E9C1003F9EBE /* DefinedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedTypes.swift; sourceTree = "<group>"; };
+		8B0FAC5C22D9EAB1003F9EBE /* MangaCoredataRequestAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaCoredataRequestAPIProtocol.swift; sourceTree = "<group>"; };
+		8B0FAC5E22D9F6A7003F9EBE /* ServerUpdatableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerUpdatableProtocol.swift; sourceTree = "<group>"; };
+		8B0FAC6022D9F711003F9EBE /* ServerModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModelProtocol.swift; sourceTree = "<group>"; };
+		8B0FAC6422D9F7E3003F9EBE /* MangaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangaViewModel.swift; sourceTree = "<group>"; };
+		8B31168F22D9F9D300CC9ADB /* CDManga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManga.swift; sourceTree = "<group>"; };
+		8B31169122D9F9F900CC9ADB /* CDCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCharacter.swift; sourceTree = "<group>"; };
+		8B31169422D9FBD600CC9ADB /* ModelUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdater.swift; sourceTree = "<group>"; };
+		8B31169722DA081500CC9ADB /* BaseCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoreDataStack.swift; sourceTree = "<group>"; };
+		8B31169922DA08DB00CC9ADB /* ParallelCoredataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelCoredataContext.swift; sourceTree = "<group>"; };
+		8B31169B22DA090E00CC9ADB /* MultiContextStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiContextStack.swift; sourceTree = "<group>"; };
+		8B31169D22DA096400CC9ADB /* ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
+		8B3116A122DA119600CC9ADB /* ErrorFormatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFormatable.swift; sourceTree = "<group>"; };
+		8B3116A322DA11FC00CC9ADB /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		8B3116A522DA33AE00CC9ADB /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		8B3116A822DA495F00CC9ADB /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
+		8B3116AA22DA5A2500CC9ADB /* MangaRock2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangaRock2.xcdatamodel; sourceTree = "<group>"; };
+		8B3116AF22DA5D3B00CC9ADB /* MangaRockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaRockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3116B122DA5D3B00CC9ADB /* MangaManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaManagerTests.swift; sourceTree = "<group>"; };
+		8B3116B322DA5D3B00CC9ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB6A21822DA01BC008AF0EF /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		8BB6A21A22DA01DF008AF0EF /* CoreData+ObjectID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+ObjectID.swift"; sourceTree = "<group>"; };
 		F90A1B322217DF2600EFF735 /* MangaRock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaRock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9260D54221F047F00A07BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97117FF221F02D7003F57B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,41 +112,185 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B3116AC22DA5D3B00CC9ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F90A1B2F2217DF2600EFF735 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C054D701B4799170B36445 /* Pods_MangaRock.framework in Frameworks */,
+				479B467AB70D79E6DC10DDDC /* Pods_MangaRock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5801BCA6448A9AFEB7BC00AF /* Pods */ = {
+		12DC29C71C02D1F6EF7A8A1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */,
-				39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		67241653D13676E94572263F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5D2AFC3768312DD8EA6E130B /* Pods_MangaRock.framework */,
+				4BBCBACB37AF4CD41EDE8A46 /* Pods_MangaRock.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F254D423436F9620367DBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61FA0DAD25BAC2975BC16D52 /* Pods-MangaRock.debug.xcconfig */,
+				642BEC294D938B95B914BDB1 /* Pods-MangaRock.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B0FAC3922D9DD4A003F9EBE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B31169622DA07FE00CC9ADB /* CoreData */,
+				8B0FAC4322D9DE05003F9EBE /* HTTPService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B0FAC3A22D9DD56003F9EBE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC4722D9DE31003F9EBE /* MangaManager.swift */,
+				8B3116A822DA495F00CC9ADB /* Bootstrap.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8B0FAC3B22D9DD5E003F9EBE /* Manga */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC3C22D9DD73003F9EBE /* MangaRequestAPIProtocol.swift */,
+				8B0FAC5C22D9EAB1003F9EBE /* MangaCoredataRequestAPIProtocol.swift */,
+				8B0FAC3E22D9DDAA003F9EBE /* MangaCoredataRequestAPI.swift */,
+			);
+			path = Manga;
+			sourceTree = "<group>";
+		};
+		8B0FAC4222D9DDF0003F9EBE /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC3B22D9DD5E003F9EBE /* Manga */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		8B0FAC4922D9DE9C003F9EBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B31169322D9FB6900CC9ADB /* ModelUpdater */,
+				8B31168E22D9F9C400CC9ADB /* CoreDataModels */,
+				8B0FAC5022D9E65D003F9EBE /* ServerModels */,
+				8B0FAC4F22D9E650003F9EBE /* ViewModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B0FAC4F22D9E650003F9EBE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC6422D9F7E3003F9EBE /* MangaViewModel.swift */,
+				8B0FAC4C22D9E0C3003F9EBE /* CharacterViewModel.swift */,
+				8BB6A21822DA01BC008AF0EF /* ViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B0FAC5022D9E65D003F9EBE /* ServerModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC5122D9E68B003F9EBE /* SVManaga.swift */,
+				8B0FAC5322D9E6EC003F9EBE /* SVCharacter.swift */,
+				8B0FAC6022D9F711003F9EBE /* ServerModelProtocol.swift */,
+			);
+			path = ServerModels;
+			sourceTree = "<group>";
+		};
+		8B0FAC5522D9E772003F9EBE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC5622D9E782003F9EBE /* Result.swift */,
+				8B0FAC5822D9E7F1003F9EBE /* CommonBlockTypes.swift */,
+				8B0FAC5A22D9E9C1003F9EBE /* DefinedTypes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B31168E22D9F9C400CC9ADB /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B31168F22D9F9D300CC9ADB /* CDManga.swift */,
+				8B31169122D9F9F900CC9ADB /* CDCharacter.swift */,
+				8BB6A21A22DA01DF008AF0EF /* CoreData+ObjectID.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		8B31169322D9FB6900CC9ADB /* ModelUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FAC5E22D9F6A7003F9EBE /* ServerUpdatableProtocol.swift */,
+				8B31169422D9FBD600CC9ADB /* ModelUpdater.swift */,
+			);
+			path = ModelUpdater;
+			sourceTree = "<group>";
+		};
+		8B31169622DA07FE00CC9ADB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8B31169F22DA099E00CC9ADB /* CoreDataStack+Ext */,
+				8B0FAC4522D9DE12003F9EBE /* CoredataService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8B31169F22DA099E00CC9ADB /* CoreDataStack+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				8B31169D22DA096400CC9ADB /* ManagedObject.swift */,
+				8B31169922DA08DB00CC9ADB /* ParallelCoredataContext.swift */,
+				8B31169B22DA090E00CC9ADB /* MultiContextStack.swift */,
+				8B31169722DA081500CC9ADB /* BaseCoreDataStack.swift */,
+			);
+			path = "CoreDataStack+Ext";
+			sourceTree = "<group>";
+		};
+		8B3116A022DA113500CC9ADB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				8B3116A122DA119600CC9ADB /* ErrorFormatable.swift */,
+				8B3116A322DA11FC00CC9ADB /* CoreDataError.swift */,
+				8B3116A522DA33AE00CC9ADB /* CommonError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		8B3116B022DA5D3B00CC9ADB /* MangaRockTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3116B122DA5D3B00CC9ADB /* MangaManagerTests.swift */,
+				8B3116B322DA5D3B00CC9ADB /* Info.plist */,
+			);
+			path = MangaRockTests;
 			sourceTree = "<group>";
 		};
 		F90A1B292217DF2600EFF735 = {
 			isa = PBXGroup;
 			children = (
 				F90A1B342217DF2600EFF735 /* MangaRock */,
+				8B3116B022DA5D3B00CC9ADB /* MangaRockTests */,
 				F90A1B332217DF2600EFF735 /* Products */,
-				5801BCA6448A9AFEB7BC00AF /* Pods */,
-				67241653D13676E94572263F /* Frameworks */,
+				2F254D423436F9620367DBF2 /* Pods */,
+				12DC29C71C02D1F6EF7A8A1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				F90A1B322217DF2600EFF735 /* MangaRock.app */,
+				8B3116AF22DA5D3B00CC9ADB /* MangaRockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +333,12 @@
 		F9711817221F03F1003F57B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8B3116A022DA113500CC9ADB /* Errors */,
+				8B0FAC5522D9E772003F9EBE /* Utils */,
+				8B0FAC4922D9DE9C003F9EBE /* Models */,
+				8B0FAC4222D9DDF0003F9EBE /* APIs */,
+				8B0FAC3A22D9DD56003F9EBE /* Managers */,
+				8B0FAC3922D9DD4A003F9EBE /* Services */,
 				F9711825221F03F1003F57B5 /* AppDelegate.swift */,
 				F9711818221F03F1003F57B5 /* UI */,
 				F9711820221F03F1003F57B5 /* Backend */,
@@ -152,6 +376,7 @@
 		F9711820221F03F1003F57B5 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				8B0FAC4022D9DDC9003F9EBE /* MangaHTTPRequestAPI.swift */,
 				F9711823221F03F1003F57B5 /* MangaRock.xcdatamodeld */,
 				F9711821221F03F1003F57B5 /* MangaRock.sqlite-wal */,
 				F9711822221F03F1003F57B5 /* MangaRock.sqlite */,
@@ -162,15 +387,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B3116AE22DA5D3B00CC9ADB /* MangaRockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3116B622DA5D3B00CC9ADB /* Build configuration list for PBXNativeTarget "MangaRockTests" */;
+			buildPhases = (
+				8B3116AB22DA5D3B00CC9ADB /* Sources */,
+				8B3116AC22DA5D3B00CC9ADB /* Frameworks */,
+				8B3116AD22DA5D3B00CC9ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3116B522DA5D3B00CC9ADB /* PBXTargetDependency */,
+			);
+			name = MangaRockTests;
+			productName = MangaRockTests;
+			productReference = 8B3116AF22DA5D3B00CC9ADB /* MangaRockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F90A1B312217DF2600EFF735 /* MangaRock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F90A1B492217DF2600EFF735 /* Build configuration list for PBXNativeTarget "MangaRock" */;
 			buildPhases = (
-				9DA9C9AD0F2E0823CFBB3652 /* [CP] Check Pods Manifest.lock */,
+				BBFA1B0CE808C560BC932758 /* [CP] Check Pods Manifest.lock */,
 				F90A1B2E2217DF2600EFF735 /* Sources */,
 				F90A1B2F2217DF2600EFF735 /* Frameworks */,
 				F90A1B302217DF2600EFF735 /* Resources */,
-				BC191EE4FF1763EBE206917C /* [CP] Embed Pods Frameworks */,
+				8E2016DC358DC991D97E2BA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,10 +431,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MR;
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Vien Tran";
 				TargetAttributes = {
+					8B3116AE22DA5D3B00CC9ADB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F90A1B312217DF2600EFF735;
+					};
 					F90A1B312217DF2600EFF735 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -211,11 +458,19 @@
 			projectRoot = "";
 			targets = (
 				F90A1B312217DF2600EFF735 /* MangaRock */,
+				8B3116AE22DA5D3B00CC9ADB /* MangaRockTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B3116AD22DA5D3B00CC9ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F90A1B302217DF2600EFF735 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,16 +486,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9DA9C9AD0F2E0823CFBB3652 /* [CP] Check Pods Manifest.lock */ = {
+		8E2016DC358DC991D97E2BA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFA1B0CE808C560BC932758 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MangaRock-checkManifestLockResult.txt",
 			);
@@ -249,40 +530,67 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC191EE4FF1763EBE206917C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangaRock/Pods-MangaRock-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B3116AB22DA5D3B00CC9ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3116B222DA5D3B00CC9ADB /* MangaManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F90A1B2E2217DF2600EFF735 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3116A922DA495F00CC9ADB /* Bootstrap.swift in Sources */,
+				8B0FAC4622D9DE12003F9EBE /* CoredataService.swift in Sources */,
+				8B0FAC4822D9DE31003F9EBE /* MangaManager.swift in Sources */,
+				8B31169E22DA096400CC9ADB /* ManagedObject.swift in Sources */,
 				F9711826221F03F1003F57B5 /* MRMangaInfoCollectionViewController.swift in Sources */,
+				8B0FAC5222D9E68B003F9EBE /* SVManaga.swift in Sources */,
 				F971182C221F03F1003F57B5 /* MangaRock.xcdatamodeld in Sources */,
+				8B31169022D9F9D300CC9ADB /* CDManga.swift in Sources */,
+				8BB6A21922DA01BC008AF0EF /* ViewModelProtocol.swift in Sources */,
+				8BB6A21B22DA01DF008AF0EF /* CoreData+ObjectID.swift in Sources */,
+				8B0FAC5922D9E7F1003F9EBE /* CommonBlockTypes.swift in Sources */,
+				8B3116A222DA119600CC9ADB /* ErrorFormatable.swift in Sources */,
+				8B0FAC3F22D9DDAA003F9EBE /* MangaCoredataRequestAPI.swift in Sources */,
+				8B31169222D9F9F900CC9ADB /* CDCharacter.swift in Sources */,
+				8B3116A622DA33AE00CC9ADB /* CommonError.swift in Sources */,
+				8B0FAC5B22D9E9C1003F9EBE /* DefinedTypes.swift in Sources */,
+				8B0FAC5722D9E782003F9EBE /* Result.swift in Sources */,
+				8B0FAC5F22D9F6A7003F9EBE /* ServerUpdatableProtocol.swift in Sources */,
+				8B0FAC5D22D9EAB1003F9EBE /* MangaCoredataRequestAPIProtocol.swift in Sources */,
+				8B0FAC4122D9DDC9003F9EBE /* MangaHTTPRequestAPI.swift in Sources */,
 				F9711828221F03F1003F57B5 /* MRAllMangaTableViewController.swift in Sources */,
+				8B0FAC5422D9E6EC003F9EBE /* SVCharacter.swift in Sources */,
 				F971182D221F03F1003F57B5 /* AppDelegate.swift in Sources */,
+				8B0FAC4D22D9E0C3003F9EBE /* CharacterViewModel.swift in Sources */,
+				8B0FAC4422D9DE05003F9EBE /* HTTPService.swift in Sources */,
+				8B31169522D9FBD600CC9ADB /* ModelUpdater.swift in Sources */,
+				8B31169C22DA090E00CC9ADB /* MultiContextStack.swift in Sources */,
+				8B31169822DA081500CC9ADB /* BaseCoreDataStack.swift in Sources */,
 				F9711829221F03F1003F57B5 /* MRMangaTableViewCell.swift in Sources */,
+				8B3116A422DA11FC00CC9ADB /* CoreDataError.swift in Sources */,
+				8B0FAC3D22D9DD73003F9EBE /* MangaRequestAPIProtocol.swift in Sources */,
+				8B31169A22DA08DB00CC9ADB /* ParallelCoredataContext.swift in Sources */,
+				8B0FAC6122D9F711003F9EBE /* ServerModelProtocol.swift in Sources */,
+				8B0FAC6522D9F7E3003F9EBE /* MangaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B3116B522DA5D3B00CC9ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F90A1B312217DF2600EFF735 /* MangaRock */;
+			targetProxy = 8B3116B422DA5D3B00CC9ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F9711812221F0355003F57B5 /* LaunchScreen.storyboard */ = {
@@ -304,6 +612,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B3116B722DA5D3B00CC9ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73AW3CKSVG;
+				INFOPLIST_FILE = MangaRockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranthicamgiang.bug.reporter.MangaRockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaRock.app/MangaRock";
+			};
+			name = Debug;
+		};
+		8B3116B822DA5D3B00CC9ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73AW3CKSVG;
+				INFOPLIST_FILE = MangaRockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranthicamgiang.bug.reporter.MangaRockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaRock.app/MangaRock";
+			};
+			name = Release;
+		};
 		F90A1B472217DF2600EFF735 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,16 +772,17 @@
 		};
 		F90A1B4A2217DF2600EFF735 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0728034FDE802F2A4154AE1 /* Pods-MangaRock.debug.xcconfig */;
+			baseConfigurationReference = 61FA0DAD25BAC2975BC16D52 /* Pods-MangaRock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = REVG7H6XV6;
 				INFOPLIST_FILE = MangaRock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.notabasement.MangaRock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranthicamgiang.mangarock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -440,16 +791,17 @@
 		};
 		F90A1B4B2217DF2600EFF735 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39A430B50EE43EB20323A984 /* Pods-MangaRock.release.xcconfig */;
+			baseConfigurationReference = 642BEC294D938B95B914BDB1 /* Pods-MangaRock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = REVG7H6XV6;
 				INFOPLIST_FILE = MangaRock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.notabasement.MangaRock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranthicamgiang.mangarock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -459,6 +811,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B3116B622DA5D3B00CC9ADB /* Build configuration list for PBXNativeTarget "MangaRockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3116B722DA5D3B00CC9ADB /* Debug */,
+				8B3116B822DA5D3B00CC9ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F90A1B2D2217DF2600EFF735 /* Build configuration list for PBXProject "MangaRock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -483,9 +844,10 @@
 		F9711823221F03F1003F57B5 /* MangaRock.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8B3116AA22DA5A2500CC9ADB /* MangaRock2.xcdatamodel */,
 				F9711824221F03F1003F57B5 /* MangaRock.xcdatamodel */,
 			);
-			currentVersion = F9711824221F03F1003F57B5 /* MangaRock.xcdatamodel */;
+			currentVersion = 8B3116AA22DA5A2500CC9ADB /* MangaRock2.xcdatamodel */;
 			path = MangaRock.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
