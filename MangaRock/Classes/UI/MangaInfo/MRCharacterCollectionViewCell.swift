@@ -10,7 +10,12 @@ import UIKit
 
 class MRCharacterCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var avatarImageView: UIImageView! {
+        didSet {
+            avatarImageView.layer.cornerRadius = avatarImageView.bounds.height/2
+            avatarImageView.layer.masksToBounds = true
+        }
+    }
     @IBOutlet weak var characterName: UILabel!
     
     override func prepareForReuse() {
