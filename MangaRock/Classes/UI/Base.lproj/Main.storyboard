@@ -128,7 +128,7 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-4O-5gI" userLabel="Thumbnail">
-                                                <rect key="frame" x="125" y="136" width="126" height="181"/>
+                                                <rect key="frame" x="124.5" y="136" width="126" height="181"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IO-gz-0aX">
                                                         <rect key="frame" x="8" y="8" width="110" height="165"/>
@@ -166,10 +166,10 @@
                                             <constraint firstItem="XMh-rv-bNR" firstAttribute="leading" secondItem="Lbf-7n-O19" secondAttribute="leading" id="6hE-sg-XAa"/>
                                             <constraint firstItem="kkT-AJ-scN" firstAttribute="leading" secondItem="Lbf-7n-O19" secondAttribute="leading" constant="16" id="EF7-ta-cXo"/>
                                             <constraint firstItem="kkT-AJ-scN" firstAttribute="top" secondItem="vWL-bH-MPb" secondAttribute="bottom" constant="8" id="En7-fJ-a75"/>
-                                            <constraint firstItem="JPR-4O-5gI" firstAttribute="leading" secondItem="Lbf-7n-O19" secondAttribute="leading" constant="125" id="T0b-wt-4KE"/>
                                             <constraint firstAttribute="bottom" secondItem="kkT-AJ-scN" secondAttribute="bottom" constant="16" id="gvT-FI-8L1"/>
                                             <constraint firstItem="vWL-bH-MPb" firstAttribute="top" secondItem="JPR-4O-5gI" secondAttribute="bottom" constant="18" id="jHl-ba-FXk"/>
                                             <constraint firstItem="XMh-rv-bNR" firstAttribute="width" secondItem="Lbf-7n-O19" secondAttribute="width" id="kIJ-mx-SF1"/>
+                                            <constraint firstItem="JPR-4O-5gI" firstAttribute="centerX" secondItem="Lbf-7n-O19" secondAttribute="centerX" id="lTC-id-64R"/>
                                             <constraint firstAttribute="trailing" secondItem="vWL-bH-MPb" secondAttribute="trailing" constant="16" id="mw5-wN-DPb"/>
                                             <constraint firstAttribute="trailing" secondItem="kkT-AJ-scN" secondAttribute="trailing" constant="16" id="okI-lB-NoP"/>
                                             <constraint firstItem="JPR-4O-5gI" firstAttribute="top" secondItem="Lbf-7n-O19" secondAttribute="top" constant="136" id="qLX-11-f5x"/>
