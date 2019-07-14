@@ -19,7 +19,7 @@ enum ChangeAction {
 protocol ServerUpdatable: class, ServerModelProtocol {
     associatedtype ServerModel: ServerModelProtocol
     
-    @discardableResult func updateIfNeededWith(serverModel: ServerModel, with action: ChangeAction) -> Bool
+    @discardableResult func updateIfNeededWith(serverModel: ServerModel, with action: ChangeAction) -> Self?
 }
 
 extension ServerUpdatable {
@@ -33,5 +33,5 @@ extension ServerUpdatable {
 }
 
 protocol CoreDataServerUpdatable: ServerUpdatable {
-    @discardableResult func updateIfNeededWith(serverModel: ServerModel, with action: ChangeAction, on context: NSManagedObjectContext) -> Bool
+    @discardableResult func updateIfNeededWith(serverModel: ServerModel, with action: ChangeAction, on context: NSManagedObjectContext) throws -> Self?
 }

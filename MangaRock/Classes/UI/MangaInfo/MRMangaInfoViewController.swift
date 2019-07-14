@@ -26,6 +26,8 @@ class MRMangaInfoViewController: UIViewController {
     
     private func setupUI() {
         characterCollectionView.dataSource = self
+        characterCollectionView.delegate = self
+//        characterCollectionView.register(MRCharacterCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: MRCharacterCollectionViewCell.self))
         coverImageView.sd_setImage(with: URL(string: manga.coverImage), completed: nil)
         thumbnailImageView.sd_setImage(with: URL(string: manga.thumbnailImage), completed: nil)
         titleLabel.text = manga.name
@@ -36,7 +38,7 @@ class MRMangaInfoViewController: UIViewController {
 
 }
 
-extension MRMangaInfoViewController: UICollectionViewDataSource {
+extension MRMangaInfoViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return manga.characters.count
     }
@@ -53,4 +55,10 @@ extension MRMangaInfoViewController: UICollectionViewDataSource {
         cell.characterName.text = character.name
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 88, height: 116)
+    }
+    
 }
+
+

@@ -17,8 +17,8 @@ extension MRManga: CoreDataServerUpdatable {
     }
     
     @discardableResult
-    func updateIfNeededWith(serverModel: SVManga, with action: ChangeAction) -> Bool {
-        guard action == .create || action == .none || needUpdate(with: serverModel) else { return false }
+    func updateIfNeededWith(serverModel: SVManga, with action: ChangeAction) -> Self? {
+        guard action == .create || action == .none || needUpdate(with: serverModel) else { return nil }
         
         self.authorName       = serverModel.authorName
         self.coverImage       = serverModel.coverImage
@@ -28,31 +28,36 @@ extension MRManga: CoreDataServerUpdatable {
         self.name             = serverModel.name
         self.updateTime       = serverModel.updateTime
         
-        return true
+        return self
     }
     
-    func updateIfNeededWith(serverModel: SVManga, with action: ChangeAction, on context: NSManagedObjectContext) -> Bool {
-        guard updateIfNeededWith(serverModel: serverModel, with: action) else {
-            return false
+    func updateIfNeededWith(serverModel: SVManga, with action: ChangeAction, on context: NSManagedObjectContext) throws -> Self? {
+        guard let _ = updateIfNeededWith(serverModel: serverModel, with: action) else {
+            return nil
         }
         
         // process relationship
-        let characterServerIDMap = Dictionary(serverModel.characters.lazy.map({ ($0.serverID, $0) }),
+        var characterServerIDMap = Dictionary(serverModel.characters.lazy.map({ ($0.serverID, $0) }),
                                               uniquingKeysWith: { lhs, _ in
                                                 return lhs // never happend when serverID isn't duplicated
         })
         
         
         for character in characters?.lazy.compactMap({ ($0 as? MRCharacter) }) ?? [] {
-            guard let serverCharacter = characterServerIDMap[character.serverID] else {
+            guard let serverCharacter = characterServerIDMap.removeValue(forKey: character.serverID) else {
                 context.delete(character)
                 continue
             }
-            
+            character.addToMangas(self)
             character.updateIfNeededWith(serverModel: serverCharacter, with: .none)
         }
         
-        return true
+        for character in characterServerIDMap.values {
+            let cdCharacter: MRCharacter = try context.insertObject()
+            _ = try cdCharacter.updateIfNeededWith(serverModel: character, with: .create, on: context)
+            cdCharacter.addToMangas(self)
+        }
+        return self
     }
 }
 

@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreData
 
-struct ModelUpdater<ModelType: ServerUpdatable> {
+struct ModelUpdater<ModelType: CoreDataServerUpdatable> {
     
     private let fetchBlock: (ModelType.ServerModel) -> ModelType?
     private let createBlock: () -> ModelType?
@@ -19,13 +20,13 @@ struct ModelUpdater<ModelType: ServerUpdatable> {
     }
 
     @discardableResult
-    func updateOrCreate(serverModel: ModelType.ServerModel) throws -> ModelType {
+    func updateOrCreate(serverModel: ModelType.ServerModel, on context: NSManagedObjectContext) throws -> ModelType {
         if let model = fetchBlock(serverModel) {
-            model.updateIfNeededWith(serverModel: serverModel, with: .update)
+            try model.updateIfNeededWith(serverModel: serverModel, with: .update, on: context)
             return model
             
         } else if let model = createBlock() {
-            model.updateIfNeededWith(serverModel: serverModel, with: .create)
+            try model.updateIfNeededWith(serverModel: serverModel, with: .create, on: context)
             return model
             
         } else {

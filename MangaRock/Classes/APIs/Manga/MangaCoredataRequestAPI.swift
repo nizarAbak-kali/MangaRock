@@ -99,7 +99,7 @@ final class MangaCoredataRequestAPI: MangaCoredataRequestAPIProtocol {
                 autoreleasepool {
                     for i in serverReplyList.startIndex ..< endIndex {
                         do {
-                            try self.mangaUpdater.updateOrCreate(serverModel: serverReplyList[i])
+                            try self.mangaUpdater.updateOrCreate(serverModel: serverReplyList[i], on: self.coreDataStack.writeContext)
                             
                         } catch {
                             // Record the error, continue to write, allow partial data
